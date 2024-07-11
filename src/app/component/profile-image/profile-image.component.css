@@ -1,0 +1,23 @@
+
+.child{
+ background-color: azure;
+    width:inherit;
+ height:100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap:20px;
+}
+span{
+    font-size: larger;
+    padding: 4px;
+}
+button{
+    background-color: yellowgreen;
+    outline: none;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}

@@ -1,0 +1,15 @@
+<div>
+    <nav class="navBar">Parent</nav>
+    <div class="main-cointainer">
+        <div class="left">
+            <label for="">Name of Parent</label>
+            <input type="text" (input)="SaveFormData($event)">
+            <button (click)="sendToChild()">send to child</button>
+            <h1>data received by child => {{receivedDatafromChild}}</h1>
+        </div>
+        <div class="right">
+            <app-profile-image [greetingFromParent]="greetingFromParent" (myEvent)="receivedData($event)" ></app-profile-image>
+        </div>
+    </div>
+    <footer class="fotter">fotter</footer>
+</div>
